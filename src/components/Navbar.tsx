@@ -21,8 +21,7 @@ export default function Navbar() {
       zIndex: 50,
       backgroundColor: 'white',
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-      transition: 'all 0.3s ease',
-      paddingLeft: '130px'
+      transition: 'all 0.3s ease'
     }}>
                    <div className="navbar-container" style={{
         maxWidth: '1400px',

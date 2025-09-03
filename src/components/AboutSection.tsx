@@ -313,7 +313,7 @@ export default function AboutSection() {
 
         {/* How It Works Section */}
         <div style={{
-!          marginTop: '6rem'
+          marginTop: '6rem'
         }}>
           <div style={{
             maxWidth: '1400px',
