@@ -1,26 +1,424 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desktop styles for about us page */
+@media (min-width: 1025px) {
+  .our-mission-container {
+    padding-top: 6rem !important;
+  }
+  
+  .about-us-images-grid {
+    padding-top: 4rem !important;
+  }
+  
+  .about-founders-container {
+    padding-top: 4rem !important;
+  }
+  
+  /* Reduce paragraph font size in first 2 sections */
+  .our-mission-container p {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem) !important;
+  }
+  
+  .about-us-images-grid p {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem) !important;
+  }
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  /* Tablet styles */
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  
+  /* Trustability section tablet adjustments */
+  .trustability-section {
+    min-height: auto !important;
+  }
+  
+  /* How it works section tablet adjustments */
+  .how-it-works-steps {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+    max-width: 100% !important;
+  }
+  
+  .how-it-works-steps > div {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  .how-it-works-steps > div:nth-child(3) {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    max-width: 50% !important;
+  }
+  
+  /* How it works page tablet adjustments */
+  .how-it-works-hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 0 2rem !important;
+    text-align: center !important;
+  }
+  
+  .how-it-works-hero-container p {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .certificate-steps-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Footer tablet adjustments */
+  .footer-subscription h3 {
+    text-align: center !important;
+  }
+  
+  .footer-subscription p {
+    text-align: center !important;
+  }
+  
+  .footer-main-content {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  /* Services page tablet adjustments */
+  .services-hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+    text-align: center !important;
+  }
+  
+  .services-hero-container p {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .additional-services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  .enterprise-auth-container {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+    text-align: center !important;
+  }
+  
+  /* About us page tablet adjustments */
+  .our-mission-container {
+    text-align: center !important;
+  }
+  
+  .our-mission-container p {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .about-us-images-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .about-founders-container {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+    text-align: center !important;
+  }
+  
+  /* Remove bottom borders from about us page sections */
+  .our-mission-container,
+  .about-us-images-grid,
+  .about-founders-container {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Remove all borders from about us page sections */
+  section {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    outline: none !important;
+  }
+  
+  /* Remove borders from all elements in about us sections */
+  .our-mission-container *,
+  .about-us-images-grid *,
+  .about-founders-container * {
+    border-bottom: none !important;
+    border: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile styles */
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  
+  /* Hero section mobile adjustments */
+  .hero-content {
+    text-align: center !important;
+    max-width: 100% !important;
+  }
+  
+  .hero-title {
+    font-size: clamp(2rem, 6vw, 3rem) !important;
+  }
+  
+  .hero-description {
+    font-size: clamp(1rem, 3vw, 1.25rem) !important;
+  }
+  
+  .hero-button {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+  }
+  
+  /* Trustability section mobile adjustments */
+  .trustability-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+  }
+  
+  .trustability-content {
+    order: 2 !important;
+  }
+  
+  .trustability-image {
+    order: 1 !important;
+  }
+  
+  /* What we authenticate section mobile adjustments */
+  .auth-cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile adjustments */
+  .auth-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* About section mobile adjustments */
+  .about-main-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+  }
+  
+  .authenticator-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* How it works section mobile adjustments */
+  .how-it-works-steps {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .how-it-works-steps > div:nth-child(3) {
+    grid-column: auto !important;
+    justify-self: auto !important;
+    max-width: none !important;
+  }
+  
+  /* Service section mobile adjustments */
+  .service-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+  }
+  
+  /* Footer mobile adjustments */
+  .footer-main-content {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  .footer-subscription {
+    max-width: 100% !important;
+  }
+  
+  .footer-form {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  .footer-form input {
+    border-right: 1px solid #d1d5db !important;
+    border-radius: 0.5rem !important;
+  }
+  
+  .footer-form button {
+    border-radius: 0.5rem !important;
+  }
+  
+  /* How it works page mobile adjustments */
+  .how-it-works-hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 0 2rem !important;
+    text-align: center !important;
+  }
+  
+  .certificate-steps-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Services page mobile adjustments */
+  .services-hero-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+  }
+  
+  .additional-services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  .enterprise-auth-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+  }
+  
+  /* About us page mobile adjustments */
+  .our-mission-container {
+    text-align: center !important;
+  }
+  
+  .our-mission-container p {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .about-us-images-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  .about-founders-container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    text-align: center !important;
+  }
+  
+  /* Remove bottom borders from about us page sections on mobile */
+  .our-mission-container,
+  .about-us-images-grid,
+  .about-founders-container {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Remove all borders from about us page sections on mobile */
+  section {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    outline: none !important;
+  }
+  
+  /* Remove borders from all elements in about us sections on mobile */
+  .our-mission-container *,
+  .about-us-images-grid *,
+  .about-founders-container * {
+    border-bottom: none !important;
+    border: none !important;
+  }
+  
+  /* Service page hero section mobile adjustments */
+  .services-hero-container > div:last-child {
+    height: auto !important;
+    padding-left: 0 !important;
+  }
+  
+  /* Hero section mobile adjustments */
+  .hero-content {
+    padding-bottom: 0.5rem !important;
+  }
+  
+  .hero-description {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* More aggressive override for hero section spacing */
+  .hero-content p {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .hero-content button {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Our Mission section mobile adjustments */
+  .our-mission-container {
+    padding-top: 4rem !important;
+  }
+  
+  /* About Us section mobile adjustments */
+  .about-us-images-grid h2 {
+    text-align: center !important;
+  }
+  
+  /* Target the About Us section h2 directly */
+  section h2 {
+    text-align: center !important;
+  }
+  
+  /* About Our Founders section mobile adjustments */
+  .about-founders-container > div:last-child {
+    height: auto !important;
+    padding-left: 0 !important;
+  }
+  
+  /* Enterprise Authentication section mobile adjustments */
+  .enterprise-auth-container > div:last-child {
+    height: auto !important;
+    padding-left: 0 !important;
+  }
 }
