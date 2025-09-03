@@ -19,41 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar container padding */
-.navbar-container {
-  padding-left: 130px !important;
-}
-
-/* Ensure navbar padding works on all pages including About Us */
-nav .navbar-container {
-  padding-left: 130px !important;
-}
-
-/* Specific rule for About Us page navbar */
-body nav .navbar-container {
-  padding-left: 130px !important;
-}
-
-/* Override global padding reset for navbar */
-* .navbar-container {
-  padding-left: 130px !important;
-}
-
-/* Most specific rule for navbar padding */
-html body nav .navbar-container {
-  padding-left: 130px !important;
-}
-
-/* Force navbar padding on About Us page */
-body:has(main) nav .navbar-container {
-  padding-left: 130px !important;
-}
-
-/* Alternative approach - target the specific page */
-[data-page="our-story"] nav .navbar-container,
-.our-story-page nav .navbar-container {
-  padding-left: 130px !important;
-}
+/* Navbar container padding - removed to prevent hydration issues */
 
 /* Desktop styles for about us page */
 @media (min-width: 1025px) {
