@@ -21,12 +21,13 @@ export default function Navbar() {
       zIndex: 50,
       backgroundColor: 'white',
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      paddingLeft: '130px'
     }}>
-                   <div style={{
+                   <div className="navbar-container" style={{
         maxWidth: '1400px',
         margin: '0 auto',
-        padding: '0 2rem',
+        padding: '0 2rem 0 130px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',

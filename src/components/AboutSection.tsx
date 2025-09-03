@@ -1,6 +1,9 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+
 export default function AboutSection() {
+  const router = useRouter();
   const authenticators = [
     {
       name: "H.BIRKIN",
@@ -34,7 +37,8 @@ export default function AboutSection() {
 
   return (
     <section style={{
-      padding: '6rem 0',
+      paddingTop: '6rem',
+      paddingBottom: '0',
       backgroundColor: 'white',
       minHeight: '100vh'
     }}>
@@ -84,29 +88,31 @@ export default function AboutSection() {
             <div style={{
               marginTop: '1rem'
             }}>
-              <button style={{
-                backgroundColor: 'transparent',
-                color: '#2d2d2d',
-                border: 'none',
-                padding: '0.5rem 0',
-                fontSize: 'clamp(1rem, 2vw, 1.125rem)',
-                fontWeight: 'bold',
-                letterSpacing: '0.05em',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                textTransform: 'uppercase',
-                textDecoration: 'underline',
-                textUnderlineOffset: '0.25rem',
-                textDecorationThickness: '2px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = '#1a1a1a';
-                e.currentTarget.style.textDecorationThickness = '3px';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = '#2d2d2d';
-                e.currentTarget.style.textDecorationThickness = '2px';
-              }}
+              <button 
+                onClick={() => router.push('/our-story')}
+                style={{
+                  backgroundColor: 'transparent',
+                  color: '#2d2d2d',
+                  border: 'none',
+                  padding: '0.5rem 0',
+                  fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+                  fontWeight: 'bold',
+                  letterSpacing: '0.05em',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  textTransform: 'uppercase',
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '0.25rem',
+                  textDecorationThickness: '2px'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#1a1a1a';
+                  e.currentTarget.style.textDecorationThickness = '3px';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = '#2d2d2d';
+                  e.currentTarget.style.textDecorationThickness = '2px';
+                }}
               >
                 LEARN MORE
               </button>
@@ -302,6 +308,76 @@ export default function AboutSection() {
                  </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* How It Works Section */}
+        <div style={{
+!          marginTop: '6rem'
+        }}>
+          <div style={{
+            maxWidth: '1400px',
+            margin: '0 auto',
+            padding: '0 0rem',
+            textAlign: 'left'
+          }}>
+            {/* Main Heading */}
+            <h2 style={{
+              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              fontWeight: 'bold',
+              color: '#2d2d2d',
+              marginBottom: '2rem',
+              letterSpacing: '0.02em',
+              textTransform: 'uppercase'
+            }}>
+              HOW IT WORKS
+            </h2>
+
+            {/* Description */}
+            <p style={{
+              fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+              color: '#2d2d2d',
+              lineHeight: 1.6,
+              marginBottom: '3rem',
+              fontWeight: '400',
+              maxWidth: '600px'
+            }}>
+              HASSLE-FREE AUTHENTICATION IN JUST 3 STEPS. OUR USER-FRIENDLY PROCESS LETS YOU GET RESULTS IN AS LITTLE AS 1 HOUR, FROM ANYWHERE IN THE WORLD.
+            </p>
+
+            {/* Coming Soon Button */}
+            <div style={{
+              marginTop: '2rem'
+            }}>
+              <button 
+                onClick={() => router.push('/how-it-works')}
+                style={{
+                  backgroundColor: 'transparent',
+                  color: '#2d2d2d',
+                  border: 'none',
+                  padding: '0.5rem 0',
+                  fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+                  fontWeight: 'bold',
+                  letterSpacing: '0.05em',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  textTransform: 'uppercase',
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '0.25rem',
+                  textDecorationThickness: '2px'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#1a1a1a';
+                  e.currentTarget.style.textDecorationThickness = '3px';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = '#2d2d2d';
+                  e.currentTarget.style.textDecorationThickness = '2px';
+                }}
+              >
+                COMING SOON
+              </button>
+            </div>
           </div>
         </div>
       </div>

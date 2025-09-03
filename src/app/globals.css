@@ -19,6 +19,64 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Navbar container padding */
+.navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Ensure navbar padding works on all pages including About Us */
+nav .navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Specific rule for About Us page navbar */
+body nav .navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Override global padding reset for navbar */
+* .navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Most specific rule for navbar padding */
+html body nav .navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Force navbar padding on About Us page */
+body:has(main) nav .navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Alternative approach - target the specific page */
+[data-page="our-story"] nav .navbar-container,
+.our-story-page nav .navbar-container {
+  padding-left: 130px !important;
+}
+
+/* Force navbar padding using CSS custom properties */
+:root {
+  --navbar-padding-left: 130px;
+}
+
+.navbar-container {
+  padding-left: var(--navbar-padding-left) !important;
+}
+
+/* Nuclear option - target everything */
+* {
+  --navbar-padding-left: 130px;
+}
+
+.navbar-container,
+nav .navbar-container,
+body nav .navbar-container,
+html body nav .navbar-container {
+  padding-left: 130px !important;
+  padding-left: var(--navbar-padding-left) !important;
+}
+
 /* Desktop styles for about us page */
 @media (min-width: 1025px) {
   .our-mission-container {
@@ -176,6 +234,11 @@ html {
     border-bottom: none !important;
     border: none !important;
   }
+  
+  /* About Us section bottom padding for tablet */
+  section {
+    padding-bottom: 2rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -244,6 +307,11 @@ html {
     grid-template-columns: 1fr !important;
     gap: 2rem !important;
     text-align: center !important;
+  }
+  
+  /* About Us section bottom padding for tablet and mobile */
+  section {
+    padding-bottom: 2rem !important;
   }
   
   .authenticator-cards-grid {

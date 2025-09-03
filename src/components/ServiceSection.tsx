@@ -1,6 +1,9 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+
 export default function ServiceSection() {
+  const router = useRouter();
   return (
     <section style={{
       padding: '6rem 0',
@@ -71,29 +74,31 @@ export default function ServiceSection() {
             <div style={{
               marginTop: '1rem'
             }}>
-              <button style={{
-                backgroundColor: 'transparent',
-                color: 'white',
-                border: 'none',
-                padding: '0.5rem 0',
-                fontSize: 'clamp(1rem, 2vw, 1.125rem)',
-                fontWeight: 'bold',
-                letterSpacing: '0.05em',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                textTransform: 'uppercase',
-                textDecoration: 'underline',
-                textUnderlineOffset: '0.25rem',
-                textDecorationThickness: '1px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = '#cccccc';
-                e.currentTarget.style.textDecorationThickness = '3px';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'white';
-                e.currentTarget.style.textDecorationThickness = '2px';
-              }}
+              <button 
+                onClick={() => router.push('/services')}
+                style={{
+                  backgroundColor: 'transparent',
+                  color: 'white',
+                  border: 'none',
+                  padding: '0.5rem 0',
+                  fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+                  fontWeight: 'bold',
+                  letterSpacing: '0.05em',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  textTransform: 'uppercase',
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '0.25rem',
+                  textDecorationThickness: '1px'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = '#cccccc';
+                  e.currentTarget.style.textDecorationThickness = '3px';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.textDecorationThickness = '2px';
+                }}
               >
                 START AUTHENTICATION
               </button>
