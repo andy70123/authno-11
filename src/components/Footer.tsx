@@ -30,7 +30,7 @@ export default function Footer() {
       console.log('Subscribed with email:', email);
       setMessage('Thank you for subscribing! Check your email for confirmation.');
       setEmail('');
-    } catch (error) {
+    } catch {
       setMessage('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);

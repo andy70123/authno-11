@@ -59,7 +59,7 @@ export default function TrustabilitySection() {
               margin: 0,
               fontWeight: '400'
             }}>
-              WE DON'T BUY OR SELL ITEMS SO YOU CAN TRUST OUR VALUATIONS TO BE FAIR, TRANSPARENT, AND FREE FROM BIAS. WE WANT TO KEEP IT EASY FOR YOU AND TAKE AWAY THE GUESSWORK.
+              WE DON&apos;T BUY OR SELL ITEMS SO YOU CAN TRUST OUR VALUATIONS TO BE FAIR, TRANSPARENT, AND FREE FROM BIAS. WE WANT TO KEEP IT EASY FOR YOU AND TAKE AWAY THE GUESSWORK.
             </p>
           </div>
 
