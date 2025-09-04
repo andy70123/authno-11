@@ -1,9 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -26,30 +26,58 @@ export default function Navbar() {
                    <div className="navbar-container" style={{
         maxWidth: '1400px',
         margin: '0 auto',
-        padding: '0 2rem 0 130px',
+        padding: '0 clamp(1rem, 4vw, 2rem)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height: '60px'
+        height: '60px',
+        gap: '1rem'
       }}>
-                {/* Desktop Navigation */}
-        <div className="desktop-nav" style={{
+        {/* Logo */}
+        <div style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '3rem'
+          height: '100%'
+        }}>
+          <Link href="/" style={{
+            display: 'flex',
+            alignItems: 'center',
+            textDecoration: 'none'
+          }}>
+            <Image
+              src="/Logo.jpg"
+              alt="Authno Logo"
+              width={120}
+              height={40}
+              style={{
+                height: 'clamp(30px, 6vw, 40px)',
+                width: 'auto',
+                objectFit: 'contain'
+              }}
+            />
+          </Link>
+        </div>
+
+        {/* Navigation */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 'clamp(1rem, 3vw, 3rem)',
+          flexWrap: 'nowrap'
         }}>
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               style={{
                 color: '#000000',
                 textDecoration: 'none',
                 fontWeight: '500',
-                fontSize: '1rem',
+                fontSize: 'clamp(0.8rem, 2.5vw, 1rem)',
                 transition: 'color 0.3s ease',
                 position: 'relative',
-                padding: '0.5rem 0'
+                padding: '0.5rem 0',
+                whiteSpace: 'nowrap'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.color = '#666666';
@@ -59,73 +87,10 @@ export default function Navbar() {
               }}
             >
               {link.name}
-            </a>
+            </Link>
                      ))}
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="mobile-menu-btn"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          style={{
-            display: 'none',
-            flexDirection: 'column',
-            gap: '4px',
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            padding: '0.5rem'
-          }}
-        >
-          <div style={{
-            width: '25px',
-            height: '2px',
-            backgroundColor: '#000000',
-            transition: 'all 0.3s ease'
-          }} />
-          <div style={{
-            width: '25px',
-            height: '2px',
-            backgroundColor: '#000000',
-            transition: 'all 0.3s ease'
-          }} />
-          <div style={{
-            width: '25px',
-            height: '2px',
-            backgroundColor: '#000000',
-            transition: 'all 0.3s ease'
-          }} />
-        </button>
       </div>
-
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div style={{
-          backgroundColor: 'white',
-          borderTop: '1px solid #e5e5e5',
-          padding: '1rem 2rem',
-          display: 'block'
-        }}>
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              style={{
-                display: 'block',
-                color: '#000000',
-                textDecoration: 'none',
-                fontWeight: '500',
-                fontSize: '1rem',
-                padding: '0.75rem 0',
-                borderBottom: '1px solid #f0f0f0'
-              }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {link.name}
-            </a>
-                     ))}
-        </div>
-      )}
     </nav>
   );
 }

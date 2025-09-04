@@ -17,7 +17,7 @@ export default function AboutUsSection() {
       }}>
         {/* Main Heading */}
         <h2 style={{
-          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+          fontSize: 'clamp(3rem, 8vw, 6rem)',
           fontWeight: 'bold',
           color: '#2d2d2d',
           margin: 0,
@@ -29,61 +29,97 @@ export default function AboutUsSection() {
           ABOUT US
         </h2>
 
-        {/* Description Paragraph */}
-                 <p style={{
-           fontSize: 'clamp(1rem, 2vw, 1.25rem)',
-           color: '#2d2d2d',
-           lineHeight: 1.6,
-           margin: 0,
-           marginBottom: '4rem',
-           fontWeight: '400',
-           width: '100%'
-         }}>
+                 {/* Description Paragraph */}
+                  <p style={{
+            fontSize: '1rem',
+            color: '#2d2d2d',
+            lineHeight: 1.6,
+            margin: 0,
+            marginBottom: '2rem',
+            fontWeight: '400',
+            width: '100%'
+          }}>
           FOUNDED BY A TEAM PASSIONATE ABOUT LUXURY, TECHNOLOGY, AND TRUST, WE&apos;VE SPENT YEARS PERFECTING THE ART AND SCIENCE OF AUTHENTICATION. OUR SPECIALISTS WORK HAND-IN-HAND WITH ADVANCED AI SYSTEMS TO DELIVER RESULTS YOU CAN DEPEND ON.
         </p>
 
-                 {/* Two Images Side by Side */}
+                 {/* Four Images Side by Side */}
          <div className="about-us-images-grid" style={{
            display: 'grid',
-           gridTemplateColumns: '1fr 1fr',
-           gap: '4rem',
+           gridTemplateColumns: 'repeat(4, 1fr)',
+           gap: '1rem',
            alignItems: 'center',
-           justifyContent: 'space-between'
+           justifyContent: 'center'
          }}>
-          {/* Left Image */}
+          {/* Image 1 */}
           <div style={{
             display: 'flex',
-            justifyContent: 'flex-start',
+            justifyContent: 'center',
             alignItems: 'center'
           }}>
-                         <img
-               src="/image 11.png"
-               alt="Our team working together"
-               style={{
-                 maxWidth: '100%',
-                 height: 'auto',
-                 objectFit: 'cover',
-                 borderRadius: '0'
-               }}
-             />
+            <img
+              src="/ab1.png"
+              alt="About us image 1"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: '0'
+              }}
+            />
           </div>
 
-          {/* Right Image */}
+          {/* Image 2 */}
           <div style={{
             display: 'flex',
-            justifyContent: 'flex-end',
+            justifyContent: 'center',
             alignItems: 'center'
           }}>
-                         <img
-               src="/image 12.png"
-               alt="Our team collaboration"
-               style={{
-                 maxWidth: '100%',
-                 height: 'auto',
-                 objectFit: 'cover',
-                 borderRadius: '0'
-               }}
-             />
+            <img
+              src="/ab2.png"
+              alt="About us image 2"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: '0'
+              }}
+            />
+          </div>
+
+          {/* Image 3 */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <img
+              src="/ab3.png"
+              alt="About us image 3"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: '0'
+              }}
+            />
+          </div>
+
+          {/* Image 4 */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <img
+              src="/ab4.png"
+              alt="About us image 4"
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                objectFit: 'cover',
+                borderRadius: '0'
+              }}
+            />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function WhatWeAuthenticateSection() {
     },
     {
       image: '/image 3.png',
-      label: 'CLOTHINGS'
+      label: 'CLOTHING'
     },
     {
       image: '/image 4.png',
@@ -37,15 +37,16 @@ export default function WhatWeAuthenticateSection() {
         width: '100%'
       }}>
         {/* Main Heading */}
-        <h2 style={{
-          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-          fontWeight: 'bold',
-          color: 'white',
-          textAlign: 'center',
-          marginBottom: '4rem',
-          letterSpacing: '0.02em',
-          textTransform: 'uppercase'
-        }}>
+                 <h2 style={{
+           fontSize: 'clamp(3rem, 8vw, 6rem)',
+           fontWeight: 'bold',
+           color: 'white',
+           textAlign: 'center',
+           marginBottom: '4rem',
+           letterSpacing: '-0.015em',
+           textTransform: 'uppercase',
+           lineHeight: 1.1
+         }}>
           WHAT WE AUTHENTICATE
         </h2>
 

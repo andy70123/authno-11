@@ -1,6 +1,5 @@
 import OurMissionSection from '@/components/OurMissionSection';
 import AboutUsSection from '@/components/AboutUsSection';
-import AboutOurFoundersSection from '@/components/AboutOurFoundersSection';
 import Footer from '@/components/Footer';
 
 export default function OurStoryPage() {
@@ -8,7 +7,6 @@ export default function OurStoryPage() {
     <main className="min-h-screen our-story-page">
       <OurMissionSection />
       <AboutUsSection />
-      <AboutOurFoundersSection />
       <Footer />
     </main>
   );

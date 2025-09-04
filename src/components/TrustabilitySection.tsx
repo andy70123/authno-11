@@ -25,14 +25,14 @@ export default function TrustabilitySection() {
           gap: '2rem'
         }}>
           {/* Main Heading */}
-          <h2 style={{
-            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
-            fontWeight: 'bold',
-            color: '#2d2d2d',
-            lineHeight: 1.1,
-            letterSpacing: '0.02em',
-            margin: 0
-          }}>
+                     <h2 style={{
+             fontSize: 'clamp(3rem, 8vw, 6rem)',
+             fontWeight: 'bold',
+             color: '#2d2d2d',
+             lineHeight: 1.1,
+             letterSpacing: '-0.015em',
+             margin: 0
+           }}>
             TRUSTABILITY
           </h2>
 
@@ -43,7 +43,7 @@ export default function TrustabilitySection() {
             gap: '1.5rem'
           }}>
             <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+              fontSize: '1rem',
               color: '#2d2d2d',
               lineHeight: 1.6,
               margin: 0,
@@ -53,7 +53,7 @@ export default function TrustabilitySection() {
             </p>
 
             <p style={{
-              fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+              fontSize: '1rem',
               color: '#2d2d2d',
               lineHeight: 1.6,
               margin: 0,
@@ -107,15 +107,15 @@ export default function TrustabilitySection() {
             position: 'relative',
             width: '100%',
             maxWidth: '500px',
-            aspectRatio: '1/1'
+            height: 'auto'
           }}>
                          <img
                src="/Chanel.png"
                alt="Chanel luxury bags"
                style={{
                  width: '100%',
-                 height: '100%',
-                 objectFit: 'cover',
+                 height: 'auto',
+                 objectFit: 'contain',
                  boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)'
                }}
              />

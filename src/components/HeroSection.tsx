@@ -7,8 +7,7 @@ export default function HeroSection() {
   
   const images = [
     '/Picture1 1.png',
-    '/picture 2.jpg',
-    '/picture 3.jpg'
+    '/picture 2.jpg'
   ];
 
   // Auto-slide functionality
@@ -68,7 +67,7 @@ export default function HeroSection() {
 
             {/* Description */}
             <p className="hero-description" style={{ 
-              fontSize: 'clamp(1.25rem, 2vw, 1.5rem)', 
+              fontSize: '1rem', 
               color: 'white', 
               marginBottom: '3rem', 
               lineHeight: 1.6, 

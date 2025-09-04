@@ -48,13 +48,6 @@ html {
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
   /* Tablet styles */
-  .desktop-nav {
-    display: none !important;
-  }
-  
-  .mobile-menu-btn {
-    display: flex !important;
-  }
   
   /* Trustability section tablet adjustments */
   .trustability-section {
@@ -187,12 +180,15 @@ html {
 
 @media (max-width: 768px) {
   /* Mobile styles */
-  .desktop-nav {
-    display: none !important;
+  
+  /* Navbar mobile adjustments */
+  .navbar-container {
+    padding: 0 1rem !important;
+    gap: 0.5rem !important;
   }
   
-  .mobile-menu-btn {
-    display: flex !important;
+  .navbar-container > div:last-child {
+    gap: clamp(0.5rem, 2vw, 1.5rem) !important;
   }
   
   /* Hero section mobile adjustments */
@@ -242,6 +238,16 @@ html {
   .auth-cards-grid {
     grid-template-columns: 1fr !important;
     gap: 1rem !important;
+  }
+  
+  /* Navbar very small screen adjustments */
+  .navbar-container {
+    padding: 0 0.5rem !important;
+    gap: 0.25rem !important;
+  }
+  
+  .navbar-container > div:last-child {
+    gap: 0.5rem !important;
   }
 }
 

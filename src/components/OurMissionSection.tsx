@@ -31,7 +31,7 @@ export default function OurMissionSection() {
 
         {/* Mission Description */}
         <p style={{
-          fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+          fontSize: '1rem',
           color: '#2d2d2d',
           lineHeight: 1.6,
           margin: 0,

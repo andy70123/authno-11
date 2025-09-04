@@ -28,7 +28,7 @@ export default function Footer() {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       console.log('Subscribed with email:', email);
-      setMessage('Thank you for subscribing! Check your email for confirmation.');
+      setMessage('Thank you for subscribing!');
       setEmail('');
     } catch {
       setMessage('Something went wrong. Please try again.');
@@ -72,7 +72,7 @@ export default function Footer() {
               textTransform: 'uppercase',
               lineHeight: 1.4
             }}>
-              SUBSCRIBE NOW AND ENJOY 10% OFF YOUR FIRST ORDER
+              SUBSCRIBE NOW TO BE THE FIRST TO GET ACCESS!
             </h3>
 
                          <form className="footer-form" onSubmit={handleSubscribe} style={{
@@ -154,29 +154,6 @@ export default function Footer() {
               </p>
             )}
 
-            <p style={{
-              fontSize: '0.75rem',
-              color: '#6b7280',
-              margin: 0,
-              lineHeight: 1.4
-            }}>
-              By subscribing, you agree to our{' '}
-              <a href="#" style={{
-                color: '#2d2d2d',
-                textDecoration: 'underline',
-                cursor: 'pointer'
-              }}>
-                Terms of Use
-              </a>
-              {' '}and{' '}
-              <a href="#" style={{
-                color: '#2d2d2d',
-                textDecoration: 'underline',
-                cursor: 'pointer'
-              }}>
-                Privacy Policy
-              </a>
-            </p>
           </div>
         </div>
 
@@ -192,7 +169,7 @@ export default function Footer() {
             letterSpacing: '0.05em',
             textTransform: 'uppercase'
           }}>
-            2024 AUTHNO © ALL RIGHTS RESERVED.
+            2025 AUTHNO © ALL RIGHTS RESERVED.
           </span>
         </div>
       </div>
