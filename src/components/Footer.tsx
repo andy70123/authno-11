@@ -23,6 +23,7 @@ export default function Footer() {
     setIsSubmitting(true);
     setMessage('');
 
+    
     try {
       // Send email to your address
       const response = await fetch('/api/subscribe', {
