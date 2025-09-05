@@ -35,12 +35,12 @@ export default function AdditionalServicesSection() {
       }}>
         {/* Main Heading */}
         <h2 style={{
-          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+          fontSize: '32px',
           fontWeight: 'bold',
           color: '#2d2d2d',
           textAlign: 'center',
           marginBottom: '4rem',
-          letterSpacing: '0.02em',
+          letterSpacing: '0%',
           textTransform: 'uppercase'
         }}>
           ADDITIONAL SERVICES
@@ -78,11 +78,11 @@ export default function AdditionalServicesSection() {
             >
               {/* Service Title */}
               <h3 style={{
-                fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
+                fontSize: '18px',
                 fontWeight: 'bold',
                 color: '#2d2d2d',
                 margin: 0,
-                letterSpacing: '0.05em',
+                letterSpacing: '0%',
                 textTransform: 'uppercase',
                 lineHeight: 1.3,
                 textAlign: 'center'

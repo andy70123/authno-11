@@ -26,11 +26,11 @@ export default function HowItWorksHero() {
          }}>
                      {/* Main Heading */}
            <h1 style={{
-             fontSize: 'clamp(3rem, 8vw, 6rem)',
+             fontSize: '32px',
              fontWeight: 'bold',
              color: '#2d2d2d',
              margin: 0,
-             letterSpacing: '0.02em',
+             letterSpacing: '0%',
              textTransform: 'uppercase',
              lineHeight: 1.1
            }}>

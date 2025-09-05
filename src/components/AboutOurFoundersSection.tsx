@@ -27,11 +27,11 @@ export default function AboutOurFoundersSection() {
         }}>
           {/* Main Heading */}
           <h2 style={{
-            fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+            fontSize: '32px',
             fontWeight: 'bold',
             color: '#2d2d2d',
             margin: 0,
-            letterSpacing: '0.02em',
+            letterSpacing: '0%',
             textTransform: 'uppercase',
             lineHeight: 1.2
           }}>
@@ -40,11 +40,11 @@ export default function AboutOurFoundersSection() {
 
           {/* Founder Name */}
           <h3 style={{
-            fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+            fontSize: '24px',
             fontWeight: 'bold',
             color: '#2d2d2d',
             margin: 0,
-            letterSpacing: '0.02em',
+            letterSpacing: '0%',
             textTransform: 'uppercase',
             lineHeight: 1.2
           }}>
@@ -53,12 +53,12 @@ export default function AboutOurFoundersSection() {
 
           {/* Founder Title */}
           <h4 style={{
-            fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
+            fontSize: '18px',
             fontWeight: 'normal',
             fontStyle: 'italic',
             color: '#2d2d2d',
             margin: 0,
-            letterSpacing: '0.02em',
+            letterSpacing: '0%',
             textTransform: 'uppercase',
             lineHeight: 1.2
           }}>

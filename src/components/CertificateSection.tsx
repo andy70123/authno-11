@@ -74,12 +74,12 @@ export default function CertificateSection() {
       }}>
         {/* Main Heading */}
         <h2 style={{
-          fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+          fontSize: '32px',
           fontWeight: 'bold',
           color: 'white',
           textAlign: 'center',
           marginBottom: '4rem',
-          letterSpacing: '0.02em',
+          letterSpacing: '0%',
           textTransform: 'uppercase'
         }}>
           GET YOUR AUTHNO CERTIFICATE EASILY
@@ -90,12 +90,12 @@ export default function CertificateSection() {
           marginBottom: '4rem'
         }}>
           <h3 style={{
-            fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+            fontSize: '24px',
             fontWeight: 'bold',
             color: 'white',
             textAlign: 'center',
             marginBottom: '3rem',
-            letterSpacing: '0.02em',
+            letterSpacing: '0%',
             textTransform: 'uppercase'
           }}>
             FOR NEW USER
@@ -122,7 +122,7 @@ export default function CertificateSection() {
 
                 {/* Title */}
                 <h4 style={{
-                  fontSize: '0.875rem',
+                  fontSize: '16px',
                   fontWeight: '500',
                   color: 'white',
                   margin: 0,
@@ -139,12 +139,12 @@ export default function CertificateSection() {
         {/* Registered User Section */}
         <div>
           <h3 style={{
-            fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+            fontSize: '24px',
             fontWeight: 'bold',
             color: 'white',
             textAlign: 'center',
             marginBottom: '3rem',
-            letterSpacing: '0.02em',
+            letterSpacing: '0%',
             textTransform: 'uppercase'
           }}>
             FOR REGISTER USER
@@ -171,7 +171,7 @@ export default function CertificateSection() {
 
                 {/* Title */}
                 <h4 style={{
-                  fontSize: '0.875rem',
+                  fontSize: '16px',
                   fontWeight: '500',
                   color: 'white',
                   margin: 0,

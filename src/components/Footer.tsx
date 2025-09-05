@@ -24,13 +24,28 @@ export default function Footer() {
     setMessage('');
 
     try {
-      // Simulate API call - replace with actual subscription logic
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('Subscribed with email:', email);
-      setMessage('Thank you for subscribing!');
-      setEmail('');
-    } catch {
+      // Send email to your address
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          to: 'Sohanzerotwo@gmail.com',
+          subject: 'New Subscription from Authno Website',
+          message: `New subscriber: ${email}`
+        }),
+      });
+
+      if (response.ok) {
+        setMessage('Thank you for subscribing!');
+        setEmail('');
+      } else {
+        throw new Error('Failed to subscribe');
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
       setMessage('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);

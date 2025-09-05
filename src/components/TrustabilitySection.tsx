@@ -25,14 +25,14 @@ export default function TrustabilitySection() {
           gap: '2rem'
         }}>
           {/* Main Heading */}
-                     <h2 style={{
-             fontSize: 'clamp(3rem, 8vw, 6rem)',
-             fontWeight: 'bold',
-             color: '#2d2d2d',
-             lineHeight: 1.1,
-             letterSpacing: '-0.015em',
-             margin: 0
-           }}>
+                               <h2 style={{
+            fontSize: '32px',
+            fontWeight: 'bold',
+            color: '#2d2d2d',
+            lineHeight: 1.1,
+            letterSpacing: '0%',
+            margin: 0
+          }}>
             TRUSTABILITY
           </h2>
 
@@ -72,7 +72,7 @@ export default function TrustabilitySection() {
               color: '#2d2d2d',
               border: 'none',
               padding: '0.5rem 0',
-              fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+              fontSize: '1rem',
               fontWeight: 'bold',
               letterSpacing: '0.05em',
               cursor: 'pointer',
@@ -80,15 +80,15 @@ export default function TrustabilitySection() {
               textTransform: 'uppercase',
               textDecoration: 'underline',
               textUnderlineOffset: '0.25rem',
-              textDecorationThickness: '2px'
+              textDecorationThickness: '1px'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.color = '#1a1a1a';
-              e.currentTarget.style.textDecorationThickness = '3px';
+              e.currentTarget.style.textDecorationThickness = '2px';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.color = '#2d2d2d';
-              e.currentTarget.style.textDecorationThickness = '2px';
+              e.currentTarget.style.textDecorationThickness = '1px';
             }}
             >
               COMING SOON

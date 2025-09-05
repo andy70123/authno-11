@@ -3,7 +3,7 @@
 export default function OurMissionSection() {
   return (
     <section style={{
-      padding: '2rem 0',
+      padding: '6rem 0 2rem 0',
       backgroundColor: 'white',
       minHeight: '40vh',
       display: 'flex',
@@ -13,33 +13,60 @@ export default function OurMissionSection() {
         maxWidth: '1400px',
         margin: '0 auto',
         padding: '0 2rem',
-        width: '100%'
+        width: '100%',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '4rem',
+        alignItems: 'center'
       }}>
-        {/* Main Heading */}
-        <h1 style={{
-          fontSize: 'clamp(3rem, 8vw, 6rem)',
-          fontWeight: 'bold',
-          color: '#2d2d2d',
-          margin: 0,
-          marginBottom: '3rem',
-          letterSpacing: '0.02em',
-          textTransform: 'uppercase',
-          lineHeight: 1.1
+        {/* Left Content */}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '2rem'
         }}>
-          OUR MISSION
-        </h1>
+          {/* Main Heading */}
+          <h1 style={{
+            fontSize: '32px',
+            fontWeight: 'bold',
+            color: '#2d2d2d',
+            margin: 0,
+            letterSpacing: '0%',
+            textTransform: 'uppercase',
+            lineHeight: 1.1
+          }}>
+            OUR MISSION
+          </h1>
 
-        {/* Mission Description */}
-        <p style={{
-          fontSize: '1rem',
-          color: '#2d2d2d',
-          lineHeight: 1.6,
-          margin: 0,
-          fontWeight: '400',
-          maxWidth: '900px'
+          {/* Mission Description */}
+          <p style={{
+            fontSize: '1rem',
+            color: '#2d2d2d',
+            lineHeight: 1.6,
+            margin: 0,
+            fontWeight: '400',
+            maxWidth: '600px'
+          }}>
+            WE EXIST TO BRING ABSOLUTE CONFIDENCE TO EVERY LUXURY PURCHASE. BY COMBINING CUTTING-EDGE AI WITH DEEP INDUSTRY KNOWLEDGE, WE EMPOWER PEOPLE AND COMPANIES TO MAKE BETTER INFORMED DECISIONS. THAT WAY WE CAN PROTECT AUTHENTICITY, PRESERVE VALUE, AND GIVE PEACE OF MIND WITH EVERY TRANSACTION.
+          </p>
+        </div>
+
+        {/* Right Image */}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
         }}>
-          WE EXIST TO BRING ABSOLUTE CONFIDENCE TO EVERY LUXURY PURCHASE. BY COMBINING CUTTING-EDGE AI WITH DEEP INDUSTRY KNOWLEDGE, WE EMPOWER PEOPLE AND COMPANIES TO MAKE BETTER INFORMED DECISIONS. THAT WAY WE CAN PROTECT AUTHENTICITY, PRESERVE VALUE, AND GIVE PEACE OF MIND WITH EVERY TRANSACTION.
-        </p>
+          <img
+            src="/image434.png"
+            alt="Our mission illustration"
+            style={{
+              maxWidth: '70%',
+              height: 'auto',
+              objectFit: 'contain'
+            }}
+          />
+        </div>
       </div>
     </section>
   );

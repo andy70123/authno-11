@@ -37,16 +37,16 @@ export default function WhatWeAuthenticateSection() {
         width: '100%'
       }}>
         {/* Main Heading */}
-                 <h2 style={{
-           fontSize: 'clamp(3rem, 8vw, 6rem)',
-           fontWeight: 'bold',
-           color: 'white',
-           textAlign: 'center',
-           marginBottom: '4rem',
-           letterSpacing: '-0.015em',
-           textTransform: 'uppercase',
-           lineHeight: 1.1
-         }}>
+                         <h2 style={{
+          fontSize: '32px',
+          fontWeight: 'bold',
+          color: 'white',
+          textAlign: 'center',
+          marginBottom: '4rem',
+          letterSpacing: '0%',
+          textTransform: 'uppercase',
+          lineHeight: 1.1
+        }}>
           WHAT WE AUTHENTICATE
         </h2>
 
@@ -116,13 +116,13 @@ export default function WhatWeAuthenticateSection() {
         <div style={{
           textAlign: 'center'
         }}>
-                     <span style={{
-             fontSize: 'clamp(1rem, 2.5vw, 1.5rem)',
-             fontWeight: 'bold',
-             color: 'white',
-             letterSpacing: '0.05em',
-             textTransform: 'uppercase'
-           }}>
+                                           <span style={{
+              fontSize: '24px',
+              fontWeight: 'bold',
+              color: 'white',
+              letterSpacing: '0%',
+              textTransform: 'uppercase'
+            }}>
             MORE COMING SOON
           </span>
         </div>

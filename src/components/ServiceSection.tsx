@@ -32,11 +32,11 @@ export default function ServiceSection() {
           }}>
             {/* Service Heading */}
             <h2 style={{
-              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              fontSize: '32px',
               fontWeight: 'bold',
               color: 'white',
               margin: 0,
-              letterSpacing: '0.02em'
+              letterSpacing: '0%'
             }}>
               OUR SERVICE
             </h2>
@@ -48,11 +48,11 @@ export default function ServiceSection() {
               gap: '1rem'
             }}>
               <h3 style={{
-                fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+                fontSize: '24px',
                 fontWeight: 'normal',
                 color: 'white',
                 margin: 0,
-                letterSpacing: '0.02em',
+                letterSpacing: '0%',
                 lineHeight: 1.2
               }}>
                 $30 BASIC AUTHENTICATION
@@ -115,11 +115,11 @@ export default function ServiceSection() {
           }}>
             {/* Statistics Heading */}
             <h2 style={{
-              fontSize: 'clamp(1.2rem, 3vw, 2rem)',
+              fontSize: '20px',
               fontWeight: '300',
               color: 'white',
               margin: 0,
-              letterSpacing: '0.02em'
+              letterSpacing: '0%'
             }}>
               AUTHENTICATIONS
             </h2>

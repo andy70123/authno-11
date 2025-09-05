@@ -3,7 +3,7 @@
 export default function EnterpriseAuthenticationSection() {
   return (
     <section style={{
-      padding: '6rem 0',
+      padding: '10rem 0 6rem 0',
       backgroundColor: 'white',
       minHeight: '80vh',
       display: 'flex',
@@ -27,11 +27,11 @@ export default function EnterpriseAuthenticationSection() {
         }}>
                      {/* Main Heading */}
            <h2 style={{
-             fontSize: 'clamp(1.4rem, 3vw, 2rem)',
+             fontSize: '32px',
              fontWeight: 'bold',
              color: '#2d2d2d',
              margin: 0,
-             letterSpacing: '0.02em',
+             letterSpacing: '0%',
              textTransform: 'uppercase',
              lineHeight: 1.1
            }}>
@@ -40,11 +40,11 @@ export default function EnterpriseAuthenticationSection() {
 
                      {/* Sub-heading */}
            <h3 style={{
-             fontSize: 'clamp(1.4rem, 3vw, 2rem)',
+             fontSize: '32px',
              fontWeight: 'bold',
              color: '#2d2d2d',
              margin: 0,
-             letterSpacing: '0.02em',
+             letterSpacing: '0%',
              lineHeight: 1.1,
              textTransform: 'uppercase'
            }}>

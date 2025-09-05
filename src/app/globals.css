@@ -45,6 +45,27 @@ html {
   }
 }
 
+/* Mobile Menu Styles */
+@media (max-width: 1024px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  
+  .mobile-menu-btn {
+    display: none !important;
+  }
+}
+
 /* Responsive breakpoints */
 @media (max-width: 1024px) {
   /* Tablet styles */
@@ -78,6 +99,7 @@ html {
     gap: 2rem !important;
     padding: 0 2rem !important;
     text-align: center !important;
+    padding-top: 4rem !important;
   }
   
   .how-it-works-hero-container p {
@@ -130,6 +152,7 @@ html {
   /* About us page tablet adjustments */
   .our-mission-container {
     text-align: center !important;
+    padding-top: 4rem !important;
   }
   
   .our-mission-container p {
@@ -138,7 +161,7 @@ html {
   }
   
   .about-us-images-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 2rem !important;
   }
   
@@ -347,6 +370,9 @@ html {
   /* About us page mobile adjustments */
   .our-mission-container {
     text-align: center !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding-top: 2rem !important;
   }
   
   .our-mission-container p {
@@ -415,7 +441,9 @@ html {
   
   /* Our Mission section mobile adjustments */
   .our-mission-container {
-    padding-top: 4rem !important;
+    padding-top: 2rem !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
   
   /* About Us section mobile adjustments */

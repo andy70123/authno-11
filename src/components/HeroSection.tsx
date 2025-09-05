@@ -14,7 +14,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prev) => (prev + 1) % images.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 10000); // Change slide every 10 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -54,12 +54,13 @@ export default function HeroSection() {
           <div className="hero-content" style={{ maxWidth: '32rem', textAlign: 'left' }}>
             {/* Headline */}
             <h1 className="hero-title" style={{ 
-              fontSize: 'clamp(3rem, 8vw, 6rem)', 
+              fontSize: '32px', 
               fontWeight: 'bold', 
               color: 'white', 
               textTransform: 'uppercase', 
               lineHeight: 1.1, 
-              marginBottom: '2rem' 
+              marginBottom: '2rem',
+              letterSpacing: '0%'
             }}>
               <span style={{ display: 'block' }}>EXPERT</span>
               <span style={{ display: 'block' }}>AUTHENTICATION</span>
@@ -71,7 +72,7 @@ export default function HeroSection() {
               color: 'white', 
               marginBottom: '3rem', 
               lineHeight: 1.6, 
-              maxWidth: '36rem' 
+              maxWidth: '20rem' 
             }}>
               AI POWERED VERIFICATION THAT CAN PROVIDE ACCURATE ASSESSMENTS IMMEDIATELY.
             </p>

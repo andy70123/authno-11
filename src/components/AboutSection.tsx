@@ -33,11 +33,11 @@ export default function AboutSection() {
           }}>
             {/* Main Heading */}
             <h2 style={{
-              fontSize: 'clamp(3rem, 8vw, 6rem)',
+              fontSize: '32px',
               fontWeight: 'bold',
               color: '#2d2d2d',
               lineHeight: 1.1,
-              letterSpacing: '-0.015em',
+              letterSpacing: '0%',
               margin: 0
             }}>
               ABOUT US
@@ -65,7 +65,7 @@ export default function AboutSection() {
                   color: '#2d2d2d',
                   border: 'none',
                   padding: '0.5rem 0',
-                  fontSize: 'clamp(1rem, 2vw, 1.125rem)',
+                  fontSize: '1rem',
                   fontWeight: 'bold',
                   letterSpacing: '0.05em',
                   cursor: 'pointer',
@@ -73,15 +73,15 @@ export default function AboutSection() {
                   textTransform: 'uppercase',
                   textDecoration: 'underline',
                   textUnderlineOffset: '0.25rem',
-                  textDecorationThickness: '2px'
+                  textDecorationThickness: '1px'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.color = '#1a1a1a';
-                  e.currentTarget.style.textDecorationThickness = '3px';
+                  e.currentTarget.style.textDecorationThickness = '2px';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.color = '#2d2d2d';
-                  e.currentTarget.style.textDecorationThickness = '2px';
+                  e.currentTarget.style.textDecorationThickness = '1px';
                 }}
               >
                 LEARN MORE
@@ -124,65 +124,90 @@ export default function AboutSection() {
             maxWidth: '1400px',
             margin: '0 auto',
             padding: '0 0rem',
-            textAlign: 'left'
+            display: 'grid',
+            gridTemplateColumns: '1fr 1fr',
+            gap: '4rem',
+            alignItems: 'center'
           }}>
-            {/* Main Heading */}
-            <h2 style={{
-              fontSize: 'clamp(3rem, 8vw, 6rem)',
-              fontWeight: 'bold',
-              color: '#2d2d2d',
-              marginBottom: '2rem',
-              letterSpacing: '-0.015em',
-              textTransform: 'uppercase',
-              lineHeight: 1.1
-            }}>
-              HOW IT WORKS
-            </h2>
-
-            {/* Description */}
-            <p style={{
-              fontSize: '1rem',
-              color: '#2d2d2d',
-              lineHeight: 1.6,
-              marginBottom: '3rem',
-              fontWeight: '400',
-              maxWidth: '600px'
-            }}>
-              HASSLE-FREE AUTHENTICATION IN JUST 3 STEPS. OUR USER-FRIENDLY PROCESS LETS YOU GET RESULTS IN AS LITTLE AS 1 HOUR, FROM ANYWHERE IN THE WORLD.
-            </p>
-
-            {/* Coming Soon Button */}
+            {/* Left Content */}
             <div style={{
-              marginTop: '2rem'
+              textAlign: 'left'
             }}>
-              <button 
-                onClick={() => router.push('/how-it-works')}
+              {/* Main Heading */}
+              <h2 style={{
+                fontSize: '32px',
+                fontWeight: 'bold',
+                color: '#2d2d2d',
+                marginBottom: '2rem',
+                letterSpacing: '0%',
+                textTransform: 'uppercase',
+                lineHeight: 1.1
+              }}>
+                HOW IT WORKS
+              </h2>
+
+              {/* Description */}
+              <p style={{
+                fontSize: '1rem',
+                color: '#2d2d2d',
+                lineHeight: 1.6,
+                marginBottom: '3rem',
+                fontWeight: '400',
+                maxWidth: '600px'
+              }}>
+                HASSLE-FREE AUTHENTICATION IN JUST 3 STEPS. OUR USER-FRIENDLY PROCESS LETS YOU GET RESULTS IN AS LITTLE AS 1 HOUR, FROM ANYWHERE IN THE WORLD.
+              </p>
+
+              {/* Coming Soon Button */}
+              <div style={{
+                marginTop: '2rem'
+              }}>
+                <button 
+                  onClick={() => router.push('/how-it-works')}
+                  style={{
+                    backgroundColor: 'transparent',
+                    color: '#2d2d2d',
+                    border: 'none',
+                    padding: '0.5rem 0',
+                    fontSize: '1rem',
+                    fontWeight: 'bold',
+                    letterSpacing: '0.05em',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    textTransform: 'uppercase',
+                    textDecoration: 'underline',
+                    textUnderlineOffset: '0.25rem',
+                    textDecorationThickness: '1px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = '#1a1a1a';
+                    e.currentTarget.style.textDecorationThickness = '2px';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.color = '#2d2d2d';
+                    e.currentTarget.style.textDecorationThickness = '1px';
+                  }}
+                >
+                  COMING SOON
+                </button>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+              <img
+                src="/image 44.png"
+                alt="How it works illustration"
                 style={{
-                  backgroundColor: 'transparent',
-                  color: '#2d2d2d',
-                  border: 'none',
-                  padding: '0.5rem 0',
-                  fontSize: 'clamp(1rem, 2vw, 1.125rem)',
-                  fontWeight: 'bold',
-                  letterSpacing: '0.05em',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                  textTransform: 'uppercase',
-                  textDecoration: 'underline',
-                  textUnderlineOffset: '0.25rem',
-                  textDecorationThickness: '2px'
+                  maxWidth: '70%',
+                  height: 'auto',
+                  objectFit: 'contain'
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = '#1a1a1a';
-                  e.currentTarget.style.textDecorationThickness = '3px';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = '#2d2d2d';
-                  e.currentTarget.style.textDecorationThickness = '2px';
-                }}
-              >
-                COMING SOON
-              </button>
+              />
             </div>
           </div>
         </div>
