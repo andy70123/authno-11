@@ -18,7 +18,7 @@ export default function HowItWorksHero() {
          alignItems: 'center'
        }}>
         {/* Left Section - Text Content */}
-                 <div style={{
+                 <div class="text-center md:text-left" style={{
            display: 'flex',
            flexDirection: 'column',
            gap: '1.5rem'
