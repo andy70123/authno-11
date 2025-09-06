@@ -9,13 +9,11 @@ export default function HowItWorksHero() {
        display: 'flex',
        alignItems: 'center'
      }}>
-             <div className="" style={{
+             <div className="flex sm:flex-col" style={{
          maxWidth: '1400px',
          margin: '0 auto',
          padding: '0 2rem',
         width:'100%',
-         display: 'grid',
-         gridTemplateColumns: '1fr 1fr',
          gap: '4rem',
          alignItems: 'center'
        }}>
