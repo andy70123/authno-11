@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: to || 'Sohanzerotwo@gmail.com',
+      to: to || 'rkrajib345@gmail.com',
       subject: subject || 'New Subscription from Authno Website',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
