@@ -61,7 +61,7 @@ export default function OurMissionSection() {
             src="/image434.png"
             alt="Our mission illustration"
             style={{
-              maxWidth: '70%',
+              maxWidth: '100%',
               height: 'auto',
               objectFit: 'contain'
             }}
