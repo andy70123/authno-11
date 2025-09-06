@@ -14,8 +14,6 @@ export default function OurMissionSection() {
         
         padding: '0 2rem',
         width: '100%',
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
         gap: '4rem',
         alignItems: 'center'
       }}>
