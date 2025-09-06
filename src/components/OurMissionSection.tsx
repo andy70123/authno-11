@@ -3,7 +3,7 @@
 export default function OurMissionSection() {
   return (
     <section style={{
-      padding: '6rem 0 2rem 0',
+      padding: '2rem 0 2rem 0',
       backgroundColor: 'white',
       minHeight: '40vh',
       display: 'flex',
