@@ -81,7 +81,8 @@ export default function AboutUsSection() {
                 maxWidth: '100%',
                 height: 'auto',
                 objectFit: 'cover',
-                borderRadius: '0'
+                borderRadius: '0',
+                filter:grayscale(100%),
               }}
             />
           </div>
@@ -99,7 +100,8 @@ export default function AboutUsSection() {
                 maxWidth: '100%',
                 height: 'auto',
                 objectFit: 'cover',
-                borderRadius: '0'
+                borderRadius: '0',
+                filter:grayscale(100%),
               }}
             />
           </div>
