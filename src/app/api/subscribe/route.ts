@@ -50,10 +50,16 @@ export async function POST(request: NextRequest) {
     console.log('Email sent successfully:', result.messageId);
 
     return NextResponse.json({ success: true, message: 'Email sent successfully' });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error('Email sending error:', error);
+
+    let errorMessage = 'Unknown error';
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+
     return NextResponse.json(
-      { success: false, message: `Failed to send email: ${error.message}` },
+      { success: false, message: `Failed to send email: ${errorMessage}` },
       { status: 500 }
     );
   }
