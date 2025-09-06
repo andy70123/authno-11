@@ -2,6 +2,7 @@
 
 export default function AboutUsSection() {
   return (
+    <>
     <section style={{
       padding: '2rem 0',
       backgroundColor: 'white',
@@ -126,5 +127,47 @@ export default function AboutUsSection() {
         </div>
       </div>
     </section>
+      <section style={{
+      padding: '2rem 0',
+      backgroundColor: 'white',
+      minHeight: '60vh',
+      display: 'flex',
+      alignItems: 'center'
+    }}>
+      <div style={{
+        maxWidth: '1400px',
+        margin: '0 auto',
+        padding: '0 2rem',
+        width: '100%'
+      }}>
+        {/* Main Heading */}
+        <h2 style={{
+          fontSize: '32px',
+          fontWeight: 'bold',
+          color: '#2d2d2d',
+          margin: 0,
+          marginBottom: '3rem',
+          letterSpacing: '0%',
+          textTransform: 'uppercase',
+          lineHeight: 1.2
+        }}>
+          OUR PROCESS
+        </h2>
+
+                 {/* Description Paragraph */}
+                  <p style={{
+            fontSize: '1rem',
+            color: '#2d2d2d',
+            lineHeight: 1.6,
+            margin: 0,
+            marginBottom: '2rem',
+            fontWeight: '400',
+            width: '100%'
+          }}>
+          Our process is designed for ease and accuracy. Simply start by uploading your item’s details and images. Our AI instantly begins analysis, checking for authenticity markers and market value. Within as little as 15 minutes, you’ll receive a clear and trustworthy assessment.
+        </p> 
+        </div>
+        </section>
+</>
   );
 }
