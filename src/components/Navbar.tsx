@@ -32,7 +32,7 @@ export default function Navbar() {
                    <div className="navbar-container" style={{
         maxWidth: '1400px',
         margin: '0 auto',
-        padding: '0 clamp(1rem, 4vw, 2rem)',
+        padding: '0 2rem !important',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
