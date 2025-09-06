@@ -154,7 +154,7 @@ export default function AboutUsSection() {
         style={{
           padding: '2rem 0',
           backgroundColor: 'white',
-          minHeight: '60vh',
+          
           display: 'flex',
           alignItems: 'center',
         }}
