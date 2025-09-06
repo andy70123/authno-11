@@ -9,7 +9,7 @@ export default function OurMissionSection() {
       display: 'flex',
       alignItems: 'center'
     }}>
-      <div className="our-mission-container mx-auto sm:mt-8" style={{
+      <div className="our-mission-container mx-auto mt-8 md:mt-0" style={{
         maxWidth: '1400px',
         
         padding: '0 2rem',
