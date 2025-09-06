@@ -104,7 +104,7 @@ export default function EnterpriseAuthenticationSection() {
               e.currentTarget.style.transform = 'translateY(0)';
             }}
             >
-              LEARN MORE
+              COMING SOON
             </button>
           </div>
         </div>
