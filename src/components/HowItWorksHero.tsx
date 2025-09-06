@@ -12,7 +12,8 @@ export default function HowItWorksHero() {
              <div className="" style={{
          maxWidth: '1400px',
          margin: '0 auto',
-         padding: '0 ',
+         padding: '0 2rem',
+        width:'100%',
          display: 'grid',
          gridTemplateColumns: '1fr 1fr',
          gap: '4rem',
