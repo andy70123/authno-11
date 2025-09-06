@@ -9,7 +9,7 @@ export default function HowItWorksHero() {
        display: 'flex',
        alignItems: 'center'
      }}>
-             <div className="how-it-works-hero-container" style={{
+             <div className="" style={{
          maxWidth: '1400px',
          margin: '0 auto',
          padding: '0 ',
