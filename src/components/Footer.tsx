@@ -33,7 +33,7 @@ export default function Footer() {
         },
         body: JSON.stringify({
           email: email,
-          to: 'rkrajib345@gmail.com',
+          to: 'andy@authno.com',
           subject: 'New Subscription from Authno Website',
           message: `New subscriber: ${email}`
         }),
