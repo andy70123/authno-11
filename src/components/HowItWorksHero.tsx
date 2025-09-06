@@ -9,7 +9,7 @@ export default function HowItWorksHero() {
        display: 'flex',
        alignItems: 'center'
      }}>
-             <div className="flex sm:flex-col" style={{
+             <div className="flex flex-col sm:flex-row" style={{
          maxWidth: '1400px',
          margin: '0 auto',
          padding: '0 2rem',
