@@ -193,6 +193,7 @@ export default function AboutUsSection() {
               marginBottom: '2rem',
               fontWeight: '400',
               width: '100%',
+              textTransform:'uppercase'
             }}
           >
             Our process is designed for ease and accuracy. Simply start by
