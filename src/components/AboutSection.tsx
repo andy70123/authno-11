@@ -18,9 +18,8 @@ export default function AboutSection() {
         padding: '0 2rem'
       }}>
         {/* About Us Section */}
-        <div className="about-main-container" style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
+        <div className="about-main-container flex flex-col md:flex-row" style={{
+
           gap: '4rem',
           alignItems: 'center',
           marginBottom: '4rem'
