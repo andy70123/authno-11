@@ -116,7 +116,7 @@ export default function AboutSection() {
         </div>
 
         {/* How It Works Section */}
-        <div style={{
+        <div className="c-how-it-work" style={{
           marginTop: '6rem'
         }}>
           <div style={{
@@ -129,7 +129,7 @@ export default function AboutSection() {
             alignItems: 'center'
           }}>
             {/* Left Content */}
-            <div style={{
+            <div className="c-how-it-content" style={{
               textAlign: 'left'
             }}>
               {/* Main Heading */}
