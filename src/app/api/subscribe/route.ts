@@ -15,15 +15,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create transporter using Gmail SMTP
-   const transporter = nodemailer.createTransport({
-  host: "smtp.zoho.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.ZOHO_USER,
-    pass: process.env.ZOHO_PASS,
-  },
-});
+const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS, }, });
 
 
     // Email content
