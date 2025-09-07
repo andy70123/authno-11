@@ -3,7 +3,7 @@
 export default function AboutUsSection() {
   return (
     <>
-      <section
+      <section className="c-about-us-section"
         style={{
           padding: '2rem 0',
           backgroundColor: 'white',
