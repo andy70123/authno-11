@@ -281,7 +281,7 @@ html {
     gap: 2rem !important;
     text-align: center !important;
   }
-  .c-how-it-works{
+  .c-how-it-works,.c-how-it-hero{
   display:flex !important;
   flex-direction:column;
   }
