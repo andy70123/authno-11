@@ -281,11 +281,11 @@ html {
     gap: 2rem !important;
     text-align: center !important;
   }
-  .c-how-it-works,.c-how-it-hero{
+  .c-how-it-works,.c-how-it-hero,.c-our-mission{
   display:flex !important;
   flex-direction:column;
   }
-  .c-how-it-content{
+  .c-how-it-content,.c-our-mission-content{
     text-align:center;
   } 
   /* About Us section bottom padding for tablet and mobile */
