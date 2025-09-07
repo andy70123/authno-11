@@ -129,9 +129,7 @@ export default function AboutSection() {
             alignItems: 'center'
           }}>
             {/* Left Content */}
-            <div className="c-how-it-content" style={{
-              textAlign: 'left'
-            }}>
+            <div className="c-how-it-content" >
               {/* Main Heading */}
               <h2 style={{
                 fontSize: '32px',
