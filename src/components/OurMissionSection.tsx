@@ -9,7 +9,7 @@ export default function OurMissionSection() {
       display: 'flex',
       alignItems: 'center'
     }}>
-      <div className="flex flex-col md:flex-row mx-auto ms-8 md:ms-0" style={{
+      <div className="flex c-our-mission" style={{
         maxWidth: '1400px',
         
         padding: '0 2rem',
@@ -18,7 +18,7 @@ export default function OurMissionSection() {
         alignItems: 'center'
       }}>
         {/* Left Content */}
-        <div style={{
+        <div className="c-our-mission-content" style={{
           display: 'flex',
           flexDirection: 'column',
           gap: '2rem'
