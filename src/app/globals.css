@@ -285,7 +285,7 @@ html {
   display:flex !important;
   flex-direction:column;
   }
-  .c-how-it-content,.c-our-mission-content{
+  .c-how-it-content,.c-our-mission-content,.c-about-us-section{
     text-align:center;
   } 
   /* About Us section bottom padding for tablet and mobile */
