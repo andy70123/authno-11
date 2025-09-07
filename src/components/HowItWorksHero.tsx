@@ -9,7 +9,7 @@ export default function HowItWorksHero() {
        display: 'flex',
        alignItems: 'center'
      }}>
-             <div className="flex flex-col sm:flex-row" style={{
+             <div className="flex c-how-it-hero" style={{
          maxWidth: '1400px',
          margin: '0 auto',
          padding: '0 2rem',
@@ -18,7 +18,7 @@ export default function HowItWorksHero() {
          alignItems: 'center'
        }}>
         {/* Left Section - Text Content */}
-                 <div class="text-center md:text-left" style={{
+                 <div  class="text-center md:text-left c-how-it-content" style={{
            display: 'flex',
            flexDirection: 'column',
            gap: '1.5rem'
