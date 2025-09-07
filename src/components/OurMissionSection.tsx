@@ -13,7 +13,7 @@ export default function OurMissionSection() {
         maxWidth: '1400px',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
-        margin: '4rem auto', 
+        margin: '4rem auto 0', 
         padding: ' 2rem',
         width: '100%',
         gap: '4rem',
