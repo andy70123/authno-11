@@ -3,7 +3,7 @@
 export default function OurMissionSection() {
   return (
     <section style={{
-      padding: '2rem 0 2rem 0',
+      padding: '2rem 0 1rem 0',
       backgroundColor: 'white',
       minHeight: '40vh',
       display: 'flex',
@@ -14,7 +14,7 @@ export default function OurMissionSection() {
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         margin: '4rem auto 0', 
-        padding: ' 2rem',
+        padding: '0 2rem',
         width: '100%',
         gap: '4rem',
         alignItems: 'center'
