@@ -281,7 +281,13 @@ html {
     gap: 2rem !important;
     text-align: center !important;
   }
-  
+  .c-how-it-works{
+  display:flex !important;
+  flex-direction:column;
+  }
+  .c-how-it-content{
+    text-align:center;
+  } 
   /* About Us section bottom padding for tablet and mobile */
   section {
     padding-bottom: 2rem !important;
