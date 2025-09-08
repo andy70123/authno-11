@@ -55,7 +55,7 @@ export default function Navbar() {
               alt="Authno Logo"
               width={120}
               height={40}
-              fill="contain"
+              layout="responsive"
             
             />
           </Link>
