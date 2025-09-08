@@ -55,11 +55,8 @@ export default function Navbar() {
               alt="Authno Logo"
               width={120}
               height={40}
-              style={{
-                height: 'clamp(30px, 6vw, 40px)',
-                width: 'auto',
-                objectFit: 'contain'
-              }}
+              fill="contain"
+            
             />
           </Link>
         </div>
