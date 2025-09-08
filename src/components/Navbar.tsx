@@ -2,9 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react;
+import { useState } from 'react';
 import logo from '@/public/Logo.jpg';
-
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +30,7 @@ export default function Navbar() {
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
       transition: 'all 0.3s ease'
     }}>
-                   <div className="navbar-container" style={{
+      <div className="navbar-container" style={{
         maxWidth: '1400px',
         margin: '0 auto',
         padding: '0 2rem !important',
@@ -57,8 +56,7 @@ export default function Navbar() {
               alt="Authno Logo"
               width={120}
               height={40}
-              layout="responsive"
-            
+              layout='responsive'
             />
           </Link>
         </div>
