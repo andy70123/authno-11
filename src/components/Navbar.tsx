@@ -2,7 +2,9 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState } from 'react
+import logo from '@/public/Logo.jpg';
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +53,7 @@ export default function Navbar() {
             textDecoration: 'none'
           }}>
             <Image
-              src="/Logo.jpg"
+              src={logo}
               alt="Authno Logo"
               width={120}
               height={40}
