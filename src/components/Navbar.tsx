@@ -52,7 +52,7 @@ export default function Navbar() {
             textDecoration: 'none'
           }}>
             <img
-              src="../../public/Logo.png"
+              src="../../public/Logo.jpg"
               alt="Authno Logo"
               width="120"
               height="40"
