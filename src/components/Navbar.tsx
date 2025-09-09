@@ -54,7 +54,7 @@ export default function Navbar() {
             <img
               src="Logo.jpg"
               alt="Authno Logo"
-              width="120"
+              width="auto"
               height="40"
               
             />
