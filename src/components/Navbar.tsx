@@ -51,8 +51,8 @@ export default function Navbar() {
             alignItems: 'center',
             textDecoration: 'none'
           }}>
-            <Img
-              src="Logo.png"
+            <img
+              src="../../public/Logo.png"
               alt="Authno Logo"
               width="120"
               height="40"
